@@ -1,0 +1,16 @@
+
+# ==== Files
+*.iml
+*.class
+.classpath
+gradlew.bat
+.project
+
+# ==== Folders
+.idea/
+.gradle/
+.settings/
+out/
+target/
+build/
+gradle/
