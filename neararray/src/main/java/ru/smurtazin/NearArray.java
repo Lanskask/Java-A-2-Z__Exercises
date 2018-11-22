@@ -12,7 +12,7 @@ public class NearArray {
     System.out.println("Init array: " + initArr);
     System.out.println("Sorted init array: " + sort(initArr));
 
-    IntListTuple ans = NearArray.twoNearArrays(initArr);
+    TwoTuple ans = NearArray.twoNearArrays(initArr);
 
     System.out.println("First array: " + ans.left);
     System.out.println("Second array: " + ans.right);
@@ -22,8 +22,8 @@ public class NearArray {
     return initList.stream().sorted().collect(Collectors.toList());
   }
 
-  static IntListTuple twoNearArrays(List<Integer> initList) {
-    IntListTuple answer = new IntListTuple(Collections.emptyList(), Collections.emptyList());
+  static TwoTuple twoNearArrays(List<Integer> initList) {
+    TwoTuple answer = new TwoTuple(Collections.emptyList(), Collections.emptyList());
 
     List<Integer> srtdInitList = sort(initList);
 
